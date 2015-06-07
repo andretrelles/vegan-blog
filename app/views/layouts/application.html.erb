@@ -8,9 +8,13 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="logged">
+	Logged in as <%= current_user.name if current_user%> 
+	<%= link_to 'Log Out', logout_path, method: :delete %>
+	<br>
+</div>
 
-<%= link_to 'Log Out', logout_path, method: :delete %>
+<%= yield %>
 
 </body>
 </html>

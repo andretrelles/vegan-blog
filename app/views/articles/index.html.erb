@@ -1,5 +1,5 @@
 
-<h1> Listing articles </h1>
+<h1> New Articles </h1>
 
 <%= link_to 'New article', new_article_path %>
 
@@ -14,9 +14,9 @@
 		<tr>
 			<td><%= article.title %></td>
 			<td><%= article.text %></td>
-			<td><%= link_to 'Show', article_path(article) %></td>
+			<td><%= link_to 'See More', article_path(article) %></td>
 			<td><%= link_to 'Edit', edit_article_path(article) %></td>
-			<td><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure you want to delete this article?' } %></td>
+			<td><%= link_to 'X', article_path(article), method: :delete, data: { confirm: 'Are you sure you want to delete this article?' } %></td>
 		</tr>
 	<% end %>
 </table>

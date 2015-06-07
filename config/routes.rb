@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  # post '/rate' => 'rater#create', :as => 'rate'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -13,8 +13,13 @@ get '/login' => 'sessions#new'
 post '/login' => 'sessions#create'
 delete '/logout' => 'sessions#destroy'
 
+end
+
 Rails.application.routes.draw do
 
+  get 'welcome/index'
+
+  post '/rate' => 'rater#create', :as => 'rate'
   resources :articles do
     resources :comments
   end
@@ -69,4 +74,4 @@ end
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
