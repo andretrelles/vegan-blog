@@ -30,7 +30,16 @@
 	background-color: white;
 	width: 900px;
 	margin: 0 auto;
+	margin: 0 auto;
+	border: 3px solid green;
+	width: 800px;
+	position: center, auto;
 
+}
+.new_link {
+	background-color: white;
+	width: 90px;
+	margin: 0 auto;
 }
 
 h1 {
@@ -38,9 +47,4 @@ h1 {
 	font-size: 50px;
 	text-align: center;
 	text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
-}
-
-h2 {
-	background-color: white;
-	opacity: 0.5;
 }

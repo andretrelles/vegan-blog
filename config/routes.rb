@@ -1,4 +1,19 @@
 Rails.application.routes.draw do
+
+# get "/users" => "users#index", as: :users
+# get "/users/new" => "users#new", as: :new
+# get "/login" => "sessions#new" as: :login
+# delete "/logout" => "sessions#destroy" as: :logout
+# get "/welcome/index" => "welcome#index" as: :welcome
+# get "/articles/:article_id/comments" => "comments#index" as: :comments
+# get "/articles/:article_id/comments/new" => "comments#new" as: :newcomment
+# get "/articles/:article_id/comments/:id/edit" => "comments#edit" as: :editcomment
+# get "/articles/:article_id/comments/:id" => "comments#show" as: :showcomment
+# get "/articles" => "articles#index" as: :articles
+# get "/articles/new" => "articles#new" as: :newarticle
+# get "/articles/:id/edit" => "articles#edit" as: :editarticle
+# get "/articles/:id" => "articles#show" as: :showarticles
+
   # post '/rate' => 'rater#create', :as => 'rate'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -13,11 +28,10 @@ get '/login' => 'sessions#new'
 post '/login' => 'sessions#create'
 delete '/logout' => 'sessions#destroy'
 
-end
-
 Rails.application.routes.draw do
 
   get 'welcome/index'
+
 
   post '/rate' => 'rater#create', :as => 'rate'
   resources :articles do
@@ -74,4 +88,4 @@ end
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
+end

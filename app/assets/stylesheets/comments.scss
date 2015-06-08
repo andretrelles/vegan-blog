@@ -2,3 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.comments {
+	background-color: white;
+	margin: 0 auto;
+	border: 3px solid green;
+	width: 800px;
+	position: center, auto;
+}
+
+h2 {
+	background-color: white;
+	opacity: 0.5;
+	width: 800px;
+	margin: 0 auto;
+}
