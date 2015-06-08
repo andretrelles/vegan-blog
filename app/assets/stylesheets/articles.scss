@@ -7,13 +7,15 @@ body {
 	text-align: center;
 }
 
-h1 {
-	color: white;
-	font-size: 50px;
-	text-align: center;
-	text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+.about {
+	background-color: white;
+	margin: 0 auto;
+	border: 3px solid green;
+	width: 800px;
+	position: center, auto;
+
 }
 
-:text {
-	
+.title {
+	font-size: 30px;
 }
